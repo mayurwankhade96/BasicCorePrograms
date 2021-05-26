@@ -22,6 +22,11 @@ namespace BasicCorePrograms
                     LeapYear leap = new LeapYear();
                     leap.LeapYr();
                     break;
+
+                case 3:
+                    LargestNumber num = new LargestNumber();
+                    num.Largest(45, 65, 20);
+                    break;
             }                           
         }
     }
