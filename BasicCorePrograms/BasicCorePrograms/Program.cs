@@ -13,6 +13,7 @@ namespace BasicCorePrograms
             const int quotientRemainder = 6;
             const int swapNumber = 7;
             const int evenOdd = 8;
+            const int vowelConsonant = 9;
             const int largestNumber = 10;
 
             Console.WriteLine("Enter a class number : ");
@@ -43,6 +44,11 @@ namespace BasicCorePrograms
                 case evenOdd:
                     EvenOdd evenOdd1 = new EvenOdd();
                     evenOdd1.EvenOrOdd();
+                    break;
+
+                case vowelConsonant:
+                    VowelConsonant vowelConsonant1 = new VowelConsonant();
+                    vowelConsonant1.VowelOrConsonant();
                     break;
 
                 case largestNumber :
