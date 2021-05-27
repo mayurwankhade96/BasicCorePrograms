@@ -10,6 +10,7 @@ namespace BasicCorePrograms
 
             const int coinFlip = 1;
             const int leapYear = 2;
+            const int power = 3;
             const int quotientRemainder = 6;
             const int swapNumber = 7;
             const int evenOdd = 8;
@@ -29,6 +30,11 @@ namespace BasicCorePrograms
                 case leapYear:
                     LeapYear leap = new LeapYear();
                     leap.LeapYr();
+                    break;
+
+                case power:
+                    Power power1 = new Power();
+                    power1.PowerOfTwo();
                     break;
 
                 case quotientRemainder:
