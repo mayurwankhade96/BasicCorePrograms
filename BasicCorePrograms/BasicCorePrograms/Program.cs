@@ -4,7 +4,7 @@ namespace BasicCorePrograms
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Welcome to basic core programs");
 
@@ -72,6 +72,11 @@ namespace BasicCorePrograms
                 case largestNumber :
                     LargestNumber num = new LargestNumber();
                     num.Largest(550, 426, 611);
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid input.");
+                    Program.Main();
                     break;
             }                           
         }
