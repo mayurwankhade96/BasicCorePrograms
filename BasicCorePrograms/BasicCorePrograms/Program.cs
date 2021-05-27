@@ -11,6 +11,7 @@ namespace BasicCorePrograms
             const int coinFlip = 1;
             const int leapYear = 2;
             const int quotientRemainder = 6;
+            const int swapNumber = 7;
             const int evenOdd = 8;
             const int largestNumber = 10;
 
@@ -32,6 +33,11 @@ namespace BasicCorePrograms
                 case quotientRemainder:
                     QuotientRemainder quotientRemainder1 = new QuotientRemainder();
                     quotientRemainder1.QuotientAndRemainder();
+                    break;
+
+                case swapNumber:
+                    Swap swap = new Swap();
+                    swap.SwapTwoNumbers(5, 15);
                     break;
 
                 case evenOdd:
