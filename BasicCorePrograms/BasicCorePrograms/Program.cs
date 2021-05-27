@@ -11,6 +11,7 @@ namespace BasicCorePrograms
             const int coinFlip = 1;
             const int leapYear = 2;
             const int power = 3;
+            const int factors = 5;
             const int quotientRemainder = 6;
             const int swapNumber = 7;
             const int evenOdd = 8;
@@ -35,6 +36,11 @@ namespace BasicCorePrograms
                 case power:
                     Power power1 = new Power();
                     power1.PowerOfTwo();
+                    break;
+
+                case factors:
+                    PrimeFactors factors1 = new PrimeFactors();
+                    factors1.Factors();
                     break;
 
                 case quotientRemainder:
