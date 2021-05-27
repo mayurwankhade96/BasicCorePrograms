@@ -8,24 +8,34 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to basic core programs");
 
-            Console.WriteLine("Enter a method number : ");
-            int methodNumber = Convert.ToInt32(Console.ReadLine());
+            const int coinFlip = 1;
+            const int leapYear = 2;
+            const int evenOdd = 8;
+            const int largestNumber = 10;
 
-            switch (methodNumber)
+            Console.WriteLine("Enter a class number : ");
+            int className = Convert.ToInt32(Console.ReadLine());
+
+            switch (className)
             {
-                case 1:
+                case coinFlip:
                     FlipCoin flipCoin = new FlipCoin();
                     flipCoin.HeadsTailsPercentage();
                     break;
 
-                case 2:
+                case leapYear:
                     LeapYear leap = new LeapYear();
                     leap.LeapYr();
                     break;
 
-                case 3:
+                case evenOdd:
+                    EvenOdd evenOdd1 = new EvenOdd();
+                    evenOdd1.EvenOrOdd();
+                    break;
+
+                case largestNumber :
                     LargestNumber num = new LargestNumber();
-                    num.Largest(45, 65, 20);
+                    num.Largest(550, 426, 611);
                     break;
             }                           
         }
