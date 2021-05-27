@@ -10,6 +10,7 @@ namespace BasicCorePrograms
 
             const int coinFlip = 1;
             const int leapYear = 2;
+            const int quotientRemainder = 6;
             const int evenOdd = 8;
             const int largestNumber = 10;
 
@@ -26,6 +27,11 @@ namespace BasicCorePrograms
                 case leapYear:
                     LeapYear leap = new LeapYear();
                     leap.LeapYr();
+                    break;
+
+                case quotientRemainder:
+                    QuotientRemainder quotientRemainder1 = new QuotientRemainder();
+                    quotientRemainder1.QuotientAndRemainder();
                     break;
 
                 case evenOdd:
