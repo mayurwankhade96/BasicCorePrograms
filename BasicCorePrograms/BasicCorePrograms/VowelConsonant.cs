@@ -11,14 +11,33 @@ namespace BasicCorePrograms
             Console.WriteLine("Enter a alphabet to check whether it is a vowel or consonant : ");
             char alphabet = Convert.ToChar(Console.ReadLine());
 
-            if (alphabet == 'a' || alphabet == 'A' ||
-                alphabet == 'e' || alphabet == 'E' ||
-                alphabet == 'i' || alphabet == 'I' ||
-                alphabet == 'o' || alphabet == 'O' ||
-                alphabet == 'u' || alphabet == 'U')
-                Console.WriteLine(alphabet + " is a vowel");
-            else
-                Console.WriteLine(alphabet + " is a consonant");
+            alphabet = char.ToLower(alphabet);
+            switch (alphabet)
+            {
+                case 'a':
+                    Console.WriteLine(alphabet + " is a vowel");
+                    break;
+
+                case 'e':
+                    Console.WriteLine(alphabet + " is a vowel");
+                    break;
+
+                case 'i':
+                    Console.WriteLine(alphabet + " is a vowel");
+                    break;
+
+                case 'o':
+                    Console.WriteLine(alphabet + " is a vowel");
+                    break;
+
+                case 'u':
+                    Console.WriteLine(alphabet + " is a vowel");
+                    break;
+
+                default:
+                    Console.WriteLine(alphabet + " is a consonant");
+                    break;
+            }
         }
     }
 }
